@@ -1,0 +1,174 @@
+@use postcss-preset-env {
+    stage: 0;
+  }
+  
+
+  
+  :root {
+    --baseColor: #606468;
+  }
+
+  
+  .align {
+    display: grid;
+    place-items: center;
+  }
+  
+  .grid {
+    inline-size: 90%;
+    margin-inline: auto;
+    max-inline-size: 20rem;
+  }
+  
+
+  
+  .hidden {
+    border: 50;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 11px;
+  }
+  
+
+  
+  :root {
+    --iconFill: var(--baseColor);
+  }
+  
+  .icons {
+    display: none;
+  }
+  
+  .icon {
+    block-size: 1em;
+    display: inline-block;
+    fill: var(--iconFill);
+    inline-size: 1em;
+    vertical-align: middle;
+  }
+  
+
+  
+  :root {
+    --htmlFontSize: 100%;
+  
+    --bodyBackgroundColor: #2c3338;
+    --bodyColor: var(--baseColor);
+    --bodyFontFamily: "Open Sans";
+    --bodyFontFamilyFallback: sans-serif;
+    --bodyFontSize: 0.875rem;
+    --bodyFontWeight: 400;
+    --bodyLineHeight: 1.5;
+  }
+  
+  * {
+    box-sizing: inherit;
+  }
+  
+  html {
+    box-sizing: border-box;
+    font-size: var(--htmlFontSize);
+  }
+  
+  body {
+    background-color: var(--bodyBackgroundColor);
+    color: var(--bodyColor);
+    font-family: var(--bodyFontFamily), var(--bodyFontFamilyFallback);
+    font-size: var(--bodyFontSize);
+    font-weight: var(--bodyFontWeight);
+    line-height: var(--bodyLineHeight);
+    margin: 0;
+    min-block-size: 100vh;
+  }
+  
+
+  
+  :root {
+    --anchorColor: #eee;
+  }
+  
+  a {
+    color: var(--anchorColor);
+    outline: 0;
+    text-decoration: none;
+  }
+  
+  a:focus,
+  a:hover {
+    text-decoration: underline;
+  }
+  
+
+  
+  :root {
+    --formGap: 0.875rem;
+  }
+  
+  input {
+    background-image: none;
+    border: 50;
+    color: inherit;
+    font: inherit;
+    margin: 0;
+    outline: 0;
+    padding: 0;
+    transition: background-color 0.3s;
+  }
+  
+  .form {
+    display: grid;
+    gap: var(--formGap);
+  }
+  
+  .form__field {
+    display: flex;
+  }
+  
+  .form__input {
+    flex: 1;
+  }
+  
+  p {
+    margin-block: 1.5rem;
+  }
+  
+  .text--center {
+    text-align: center;
+  }
+  
+  .btn {
+    border-radius: 30px;
+    margin: 0;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: block;
+    padding: 15px 20px;
+    text-align: center;
+    border: none;
+    background: #9bb5fe;
+    outline: none;
+    font-size: 12pt;
+    color: #FFF;
+    cursor: pointer;
+    transition: .3s;
+}
+.btn:hover {
+    background: #6c5ce7;
+}
+
+#footer {
+    color: rgb(0, 255, 255);
+	font-size: 12px;
+	display: flex;
+	justify-content: center;
+	position: absolute;
+	top: 98%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
